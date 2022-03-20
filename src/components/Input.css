@@ -1,34 +1,60 @@
 
 
 
-
 .input-container{
-    background-color: #e7ffff;
    
-    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.container > div > input{
-    padding: 0 2rem 0 1rem;
+.input{
+    background-color: #e7ffff;
+   margin: 0 auto;
+    border-radius: .3rem;
+    width: 60%;
+}
+.input input{
+    padding: 0 1rem 0 1rem;
     border: none;
     background: transparent;
     color: black;
-    height: 2rem ;
-    width: 20rem;
+    height: 3rem ;
+    font-size: 1.4rem;
+
 }
 
-.container > div > input:focus{
+.input input:focus{
     outline: none;
 }
-.container > div > button{
+.input button{
     border: none;
     border-left: 1px solid black;
     border-radius: 0 .5rem .5rem 0;
     background: transparent;
     cursor: pointer;
     padding-right: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
-
+@media only screen and (max-width: 668px) {
+    .input{
+        width: 100%;
+    }
+    .input input{
+        padding: 0 0 0 .7rem;
+        width: 78%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .input{
+        width: 70%;
+    }
+    .input input{
+        padding: 0 0 0 .7rem;
+        width: 78%;
+    }
+}
 
 
 

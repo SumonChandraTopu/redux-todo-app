@@ -3,26 +3,37 @@
 
 
 .app-container{
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, 0.115);
     height: 30rem;
     margin: 1rem 0;
     padding: 1rem;
-
+    overflow: auto;
 }
 
 .todo-item{
     margin: 1rem 0;
-    background-color: gold;
+    background-image: linear-gradient(to top, #1c8800, #158418, #107f26, #0f7b2f, #127637);
     display: flex;
     align-items: center;
     gap: .5rem;
+    padding: .5rem;
 }
 .todo{
     font-size: 1.3rem;
-    
+    color: #fff;
 }
 .todo-item-done{
     opacity: 70%;
     font-size: 1.3rem;
-    color: red;
+    color: #323232;
+    text-decoration: #323232 line-through;
+}
+
+@media only screen and (max-width: 668px) {
+    .todo{
+        font-size: 1rem;
+    }
+    .todo-item-done{
+        font-size: 1rem;
+    }
 }

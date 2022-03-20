@@ -9,7 +9,7 @@ function TodoItem({ name }) {
   const handleCheck = () => {
     dispatch(setCheck(name.id));
   };
-  console.log(name);
+
   return (
     <div className="todo-item">
       <Checkbox onChange={handleCheck} {...FormLabel} color="default" />

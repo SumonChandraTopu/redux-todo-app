@@ -14,15 +14,12 @@ function Input() {
         done: false,
         id: Date.now()
     }))
+    setInput('')
   };
   return (
-    <div className="container">
-      <div className="input-container">
-        {/* <div className="todo-container">
-          <div className="todo">
-            
-          </div>
-        </div> */}
+    <div className="input-container">
+      <div className="input">
+        
         <input
           onChange={(e) => setInput(e.target.value)}
           value={input}
