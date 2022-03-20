@@ -20,7 +20,7 @@
     color: black;
     height: 3rem ;
     font-size: 1.4rem;
-
+    width:75%;
 }
 
 .input input:focus{
@@ -37,15 +37,7 @@
     font-weight: 700;
 }
 
-@media only screen and (max-width: 668px) {
-    .input{
-        width: 100%;
-    }
-    .input input{
-        padding: 0 0 0 .7rem;
-        width: 78%;
-    }
-}
+
 @media only screen and (max-width: 1024px) {
     .input{
         width: 70%;
@@ -56,7 +48,15 @@
     }
 }
 
-
+@media only screen and (max-width: 668px) {
+    .input{
+        width: 100% !important;
+    }
+    .input input{
+        padding: 0 0 0 .7rem;
+        width: 73%;
+    }
+}
 
 
 

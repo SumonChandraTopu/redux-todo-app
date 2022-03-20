@@ -3,7 +3,6 @@ import TodoItem from "./TodoItem";
 import "./Todo.css";
 import { useSelector } from "react-redux";
 import { selectTodoLists } from "../features/todoSlice";
-import Input from "./Input";
 
 function TodoItems() {
   const todoList = useSelector(selectTodoLists);
