@@ -1,0 +1,28 @@
+
+
+
+
+.app-container{
+    background-color: rgba(255, 255, 255, .2);
+    height: 30rem;
+    margin: 1rem 0;
+    padding: 1rem;
+
+}
+
+.todo-item{
+    margin: 1rem 0;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.todo{
+    font-size: 1.3rem;
+    
+}
+.todo-item-done{
+    opacity: 70%;
+    font-size: 1.3rem;
+    color: red;
+}

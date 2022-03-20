@@ -17,7 +17,12 @@ function Input() {
   };
   return (
     <div className="container">
-      <div>
+      <div className="input-container">
+        {/* <div className="todo-container">
+          <div className="todo">
+            
+          </div>
+        </div> */}
         <input
           onChange={(e) => setInput(e.target.value)}
           value={input}

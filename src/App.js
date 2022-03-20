@@ -1,14 +1,16 @@
-import React from 'react';
-import Todos from "./components/Todos"
+import React from "react";
 
-import './App.css';
-import Input from './components/Input';
+import "./App.css";
+import Input from "./components/Input";
+import TodoItems from "./components/TodoItems";
 
 function App() {
   return (
     <div className="App">
-      <Todos />
-      <Input />
+      <div className="container">
+        <TodoItems />
+        <Input />
+      </div>
     </div>
   );
 }
