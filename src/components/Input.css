@@ -1,0 +1,58 @@
+
+
+.container{
+    background-color: #343434;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.container > div{
+    background-color: #e7ffff;
+   
+    border-radius: 1rem;
+}
+.container > div > input{
+    padding: 0 2rem 0 1rem;
+    border: none;
+    background: transparent;
+    color: black;
+    height: 2rem ;
+    width: 20rem;
+}
+
+.container > div > input:focus{
+    outline: none;
+}
+.container > div > button{
+    border: none;
+    border-left: 1px solid black;
+    border-radius: 0 .5rem .5rem 0;
+    background: transparent;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
