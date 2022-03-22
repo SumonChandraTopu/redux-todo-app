@@ -1,7 +1,9 @@
-import { Button, Checkbox, FormLabel } from "@mui/material";
+import { Checkbox, FormLabel, IconButton } from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 import React from "react";
 import { useDispatch } from "react-redux";
-import { setCheck } from "../features/todoSlice";
+import { deleteTodo, setCheck } from "../features/todoSlice";
 import "./Todo.css";
 
 function TodoItem({ name }) {
@@ -9,9 +11,10 @@ function TodoItem({ name }) {
   const handleCheck = () => {
     dispatch(setCheck(name.id));
   };
-  console.log("====================================");
-  console.log(name.done);
-  console.log("====================================");
+  const handleDeleteTodo = (name) => {
+    dispatch(deleteTodo(name));
+  };
+
   return (
     <div className="todo-item-container">
       <div className="todo-item">
@@ -19,9 +22,13 @@ function TodoItem({ name }) {
         <p className={name.done ? "todo-item-done" : "todo"}>{name.item}</p>
       </div>
       {name.done && (
-        <Button variant="outlined" color="error">
-          *
-        </Button>
+        <IconButton aria-label="delete" size="small">
+          <DeleteIcon
+            onClick={() => handleDeleteTodo(name)}
+            color="light"
+            fontSize="inherit"
+          />
+        </IconButton>
       )}
     </div>
   );
