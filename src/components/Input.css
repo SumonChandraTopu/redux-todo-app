@@ -44,7 +44,8 @@
     }
     .input input{
         padding: 0 0 0 .7rem;
-        width: 78%;
+        width: 83%;
+        
     }
 }
 
@@ -54,7 +55,7 @@
     }
     .input input{
         padding: 0 0 0 .7rem;
-        width: 73%;
+        width: 78%;
     }
 }
 
